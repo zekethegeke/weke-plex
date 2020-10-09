@@ -51,12 +51,12 @@ export class WekeDocument {
         return this._elements;
     }
 
-    appendElements(elements: WekeElement[]): void {
-        this._elements = this._elements.concat(elements);
+    appendElement(element: WekeElement): void {
+        this._elements.push(element);
     }
 
     appendLine(line: string): void {
-        this.appendElements([new WekeLinesElement([line])]);
+        this.appendElement(new WekeLinesElement([line]));
     }
 
     toLines(writer: WekeLineWriter): void {

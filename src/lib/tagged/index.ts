@@ -1,14 +1,26 @@
+import { WekePageRef } from 'lib/ref';
 import dedent from 'ts-dedent';
 
+type WekeOther = { weke: "OTHER" };
+
 // type WekeFormat like WekeGroup? 
-type WekeSpanParam = (string);
-type WekeBlockParam = (WekeSpanParam | string[]);
+type WekeSpanParam = (string | WekePageRef);
+type WekeBlockParam = (WekeSpanParam | WekeOther | string[]);
+
+function assertExhaustiveness(x: never): never {
+    throw new Error("exhaustive check fails for: " + x);
+}
 
 function renderParam(param: WekeBlockParam): string {
-    if (Array.isArray(param)) {
+    if (typeof param === "string") {
+        return param;
+    } if (Array.isArray(param)) {
         return param.join("\n");
+    } else switch(param.weke) {
+        case "REF": return `[[${param.path}]]`;
+        case "OTHER": return "other";  // need at least 2 cases for exhaustion check to work
+        default: assertExhaustiveness(param);
     }
-    return param.toString();
 }
 
 // raw assumes the literals should be left alone
