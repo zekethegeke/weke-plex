@@ -93,6 +93,7 @@
     }
   },
   "prettier": {
+    "tabWidth": 4,
     "singleQuote": true
   },
   "nyc": {

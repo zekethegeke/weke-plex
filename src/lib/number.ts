@@ -20,7 +20,7 @@
  * @anotherNote Some other value.
  */
 export const double = (value: number): number => {
-  return value * 2;
+    return value * 2;
 };
 
 /**
@@ -44,8 +44,8 @@ export const double = (value: number): number => {
  * @param exponent - the power to which to raise the base
  */
 export const power = (base: number, exponent: number): number => {
-  /**
-   * This es7 exponentiation operator is transpiled by TypeScript
-   */
-  return base ** exponent;
+    /**
+     * This es7 exponentiation operator is transpiled by TypeScript
+     */
+    return base ** exponent;
 };

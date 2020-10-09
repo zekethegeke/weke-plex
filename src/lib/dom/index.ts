@@ -3,42 +3,36 @@ interface WekeLineWriter {
 }
 
 interface WekeElement {
-    readonly tag: string,
+    readonly tag: string;
     toLines(writer: WekeLineWriter): void;
 }
 
 export class WekeUmlElement implements WekeElement {
-    readonly tag = "UML";
+    readonly tag = 'UML';
     private lines: string[] = [];
-    appendLines(lines: string[]) {
+    appendLines(lines: string[]): void {
         this.lines = this.lines.concat(lines);
     }
     toLines(writer: WekeLineWriter): void {
-        writer.append(["{{plantUML}}", 
-            "@startuml"]);
-        
-            writer.append(this.lines);
-        
-        writer.append(["@enduml", 
-            "{{/plantUML}}"]);
+        writer.append(['{{plantUML}}', '@startuml']);
+
+        writer.append(this.lines);
+
+        writer.append(['@enduml', '{{/plantUML}}']);
     }
 }
 
 class WekeLinesElement implements WekeElement {
-    readonly tag = "LINES";
-    constructor(readonly lines: string[]) {
-
-    }
+    readonly tag = 'LINES';
+    constructor(readonly lines: string[]) {}
     toLines(writer: WekeLineWriter): void {
         writer.append(this.lines);
     }
 }
 
 export class WekeH3Element implements WekeElement {
-    readonly tag = "H3";
-    constructor(readonly text: string) {
-
-    }
+    readonly tag = 'H3';
+    constructor(readonly text: string) {}
     toLines(writer: WekeLineWriter): void {
         writer.append([`=== ${this.text} ===`]);
     }
@@ -60,20 +54,19 @@ export class WekeDocument {
     }
 
     toLines(writer: WekeLineWriter): void {
-        this._elements.forEach(it => it.toLines(writer));
+        this._elements.forEach((it) => it.toLines(writer));
     }
-
 }
 
 export class WekeDocumentSerializer {
     serializeToString(doc: WekeDocument): string {
-        var result: string[] = [];
+        let result: string[] = [];
         const writer: WekeLineWriter = {
             append(lines) {
                 result = result.concat(lines);
-            }
-        }
+            },
+        };
         doc.toLines(writer);
-        return result.join("\n");
+        return result.join('\n');
     }
 }

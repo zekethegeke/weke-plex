@@ -2,24 +2,23 @@ export class WekeUmlBuilder {
     private content: string;
 
     constructor(readonly builder: WekeBuilder) {
-        this.content = "{{plantUML}}\n@startuml\n";
+        this.content = '{{plantUML}}\n@startuml\n';
     }
-    append(text: string):  WekeUmlBuilder {
+    append(text: string): WekeUmlBuilder {
         this.content += text;
         return this;
     }
-    endUml() {
-        this.content += "\n@enduml\n{{/plantUML}}\n";
-        this.builder.append(this.content)
+    endUml(): WekeBuilder {
+        this.content += '\n@enduml\n{{/plantUML}}\n';
+        this.builder.append(this.content);
         return this.builder;
     }
-
 }
 
 export class WekeBuilder {
     private content: string;
     constructor() {
-        this.content = "";
+        this.content = '';
     }
 
     h3(title: string): WekeBuilder {
@@ -33,7 +32,7 @@ export class WekeBuilder {
     startUml(): WekeUmlBuilder {
         return new WekeUmlBuilder(this);
     }
-    build(): string { 
+    build(): string {
         return this.content;
     }
 }
