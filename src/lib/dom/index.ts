@@ -70,3 +70,23 @@ export class WekeDocumentSerializer {
         return result.join('\n');
     }
 }
+
+// export class WekeListElement {
+//     private _elements: WekeElement[] = [];
+
+//     public get elements(): WekeElement[] {
+//         return this._elements;
+//     }
+
+//     appendElement(element: WekeElement): void {
+//         this._elements.push(element);
+//     }
+
+//     appendItem(line: string): void {
+//         this.appendElement(new WekeLinesElement([line]));
+//     }
+
+//     toLines(writer: WekeLineWriter): void {
+//         this._elements.forEach((it) => it.toLines(writer));
+//     }
+// }
