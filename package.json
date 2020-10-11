@@ -1,6 +1,6 @@
 {
   "name": "weke-plex",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "plexing the wekes",
   "main": "build/main/index.js",
   "typings": "build/main/index.d.ts",
