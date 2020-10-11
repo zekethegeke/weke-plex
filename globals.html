@@ -78,6 +78,7 @@
 								<li class="tsd-kind-class"><a href="classes/wekepageref.html" class="tsd-kind-icon">Weke<wbr>Page<wbr>Ref</a></li>
 								<li class="tsd-kind-class"><a href="classes/wekeumlbuilder.html" class="tsd-kind-icon">Weke<wbr>Uml<wbr>Builder</a></li>
 								<li class="tsd-kind-class"><a href="classes/wekeumlelement.html" class="tsd-kind-icon">Weke<wbr>Uml<wbr>Element</a></li>
+								<li class="tsd-kind-class"><a href="classes/wekeurlref.html" class="tsd-kind-icon">Weke<wbr>Url<wbr>Ref</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
@@ -90,8 +91,10 @@
 						<section class="tsd-index-section ">
 							<h3>Type aliases</h3>
 							<ul class="tsd-index-list">
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#celldata" class="tsd-kind-icon">Cell<wbr>Data</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#columninfo" class="tsd-kind-icon">Column<wbr>Info</a></li>
+								<li class="tsd-kind-type-alias tsd-has-type-parameter"><a href="globals.html#tableinfo" class="tsd-kind-icon">Table<wbr>Info</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#wekeblockparam" class="tsd-kind-icon">Weke<wbr>Block<wbr>Param</a></li>
-								<li class="tsd-kind-type-alias"><a href="globals.html#wekeother" class="tsd-kind-icon">Weke<wbr>Other</a></li>
 								<li class="tsd-kind-type-alias"><a href="globals.html#wekespanparam" class="tsd-kind-icon">Weke<wbr>Span<wbr>Param</a></li>
 							</ul>
 						</section>
@@ -101,10 +104,17 @@
 								<li class="tsd-kind-function"><a href="globals.html#assertexhaustiveness" class="tsd-kind-icon">assert<wbr>Exhaustiveness</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#block" class="tsd-kind-icon">block</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#double" class="tsd-kind-icon">double</a></li>
+								<li class="tsd-kind-function"><a href="globals.html#group" class="tsd-kind-icon">group</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#h3" class="tsd-kind-icon">h3</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#list1" class="tsd-kind-icon">list1</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#list2" class="tsd-kind-icon">list2</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#list3" class="tsd-kind-icon">list3</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#power" class="tsd-kind-icon">power</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#renderparam" class="tsd-kind-icon">render<wbr>Param</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#span" class="tsd-kind-icon">span</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#tablebycolumns" class="tsd-kind-icon">table<wbr>ByColumns</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#tablebymap" class="tsd-kind-icon">table<wbr>ByMap</a></li>
+								<li class="tsd-kind-function tsd-has-type-parameter"><a href="globals.html#tableof" class="tsd-kind-icon">table<wbr>Of</a></li>
 								<li class="tsd-kind-function"><a href="globals.html#uml" class="tsd-kind-icon">uml</a></li>
 							</ul>
 						</section>
@@ -113,41 +123,164 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Type aliases</h2>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="wekeblockparam" class="tsd-anchor"></a>
-					<h3>Weke<wbr>Block<wbr>Param</h3>
-					<div class="tsd-signature tsd-kind-icon">Weke<wbr>Block<wbr>Param<span class="tsd-signature-symbol">:</span> <a href="globals.html#wekespanparam" class="tsd-signature-type">WekeSpanParam</a><span class="tsd-signature-symbol"> | </span><a href="globals.html#wekeother" class="tsd-signature-type">WekeOther</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="celldata" class="tsd-anchor"></a>
+					<h3>Cell<wbr>Data</h3>
+					<div class="tsd-signature tsd-kind-icon">Cell<wbr>Data&lt;T, K&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>col<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">; </span>colIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">; </span>rowIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">; </span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span><span class="tsd-signature-symbol"> }</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/tagged/index.ts#L8">lib/tagged/index.ts:8</a></li>
+							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/table.ts#L1">lib/tagged/table.ts:1</a></li>
 						</ul>
 					</aside>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="wekeother" class="tsd-anchor"></a>
-					<h3>Weke<wbr>Other</h3>
-					<div class="tsd-signature tsd-kind-icon">Weke<wbr>Other<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>weke<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"OTHER"</span><span class="tsd-signature-symbol"> }</span></div>
-					<aside class="tsd-sources">
-						<ul>
-							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/tagged/index.ts#L4">lib/tagged/index.ts:4</a></li>
-						</ul>
-					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+						<li>
+							<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
 					<div class="tsd-type-declaration">
 						<h4>Type declaration</h4>
 						<ul class="tsd-parameters">
 							<li class="tsd-parameter">
-								<h5>weke<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">"OTHER"</span></h5>
+								<h5>col<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>col<wbr>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>row<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>row<wbr>Index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">]</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="columninfo" class="tsd-anchor"></a>
+					<h3>Column<wbr>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">Column<wbr>Info&lt;T, K&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>cellOf<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="globals.html#celldata" class="tsd-signature-type">CellData</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>headOf<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>col<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, colIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">; </span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/table.ts#L9">lib/tagged/table.ts:9</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+						<li>
+							<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>cell<wbr>Of<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="globals.html#celldata" class="tsd-signature-type">CellData</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>data<span class="tsd-signature-symbol">: </span><a href="globals.html#celldata" class="tsd-signature-type">CellData</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>data: <a href="globals.html#celldata" class="tsd-signature-type">CellData</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>head<wbr>Of<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>col<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, colIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></h5>
+								<ul class="tsd-parameters">
+									<li class="tsd-parameter-signature">
+										<ul class="tsd-signatures tsd-kind-type-literal tsd-parent-kind-variable">
+											<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>col<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span>, colIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+										</ul>
+										<ul class="tsd-descriptions">
+											<li class="tsd-description">
+												<h4 class="tsd-parameters-title">Parameters</h4>
+												<ul class="tsd-parameters">
+													<li>
+														<h5>col: <span class="tsd-signature-type">K</span></h5>
+													</li>
+													<li>
+														<h5>colIndex: <span class="tsd-signature-type">number</span></h5>
+													</li>
+												</ul>
+												<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+											</li>
+										</ul>
+									</li>
+								</ul>
+							</li>
+							<li class="tsd-parameter">
+								<h5>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">K</span></h5>
+							</li>
+						</ul>
+					</div>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias tsd-has-type-parameter">
+					<a name="tableinfo" class="tsd-anchor"></a>
+					<h3>Table<wbr>Info</h3>
+					<div class="tsd-signature tsd-kind-icon">Table<wbr>Info&lt;T, K&gt;<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-symbol">{ </span>columns<span class="tsd-signature-symbol">: </span><a href="globals.html#columninfo" class="tsd-signature-type">ColumnInfo</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">; </span>rows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol"> }</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/table.ts#L15">lib/tagged/table.ts:15</a></li>
+						</ul>
+					</aside>
+					<h4 class="tsd-type-parameters-title">Type parameters</h4>
+					<ul class="tsd-type-parameters">
+						<li>
+							<h4>T</h4>
+						</li>
+						<li>
+							<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span></h4>
+						</li>
+					</ul>
+					<div class="tsd-type-declaration">
+						<h4>Type declaration</h4>
+						<ul class="tsd-parameters">
+							<li class="tsd-parameter">
+								<h5>columns<span class="tsd-signature-symbol">: </span><a href="globals.html#columninfo" class="tsd-signature-type">ColumnInfo</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">[]</span></h5>
+							</li>
+							<li class="tsd-parameter">
+								<h5>rows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
 							</li>
 						</ul>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-type-alias">
-					<a name="wekespanparam" class="tsd-anchor"></a>
-					<h3>Weke<wbr>Span<wbr>Param</h3>
-					<div class="tsd-signature tsd-kind-icon">Weke<wbr>Span<wbr>Param<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><a href="classes/wekepageref.html" class="tsd-signature-type">WekePageRef</a></div>
+					<a name="wekeblockparam" class="tsd-anchor"></a>
+					<h3>Weke<wbr>Block<wbr>Param</h3>
+					<div class="tsd-signature tsd-kind-icon">Weke<wbr>Block<wbr>Param<span class="tsd-signature-symbol">:</span> <a href="globals.html#wekespanparam" class="tsd-signature-type">WekeSpanParam</a><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/tagged/index.ts#L7">lib/tagged/index.ts:7</a></li>
+							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/render.ts#L6">lib/tagged/render.ts:6</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-type-alias">
+					<a name="wekespanparam" class="tsd-anchor"></a>
+					<h3>Weke<wbr>Span<wbr>Param</h3>
+					<div class="tsd-signature tsd-kind-icon">Weke<wbr>Span<wbr>Param<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> | </span><a href="classes/wekepageref.html" class="tsd-signature-type">WekePageRef</a><span class="tsd-signature-symbol"> | </span><a href="classes/wekeurlref.html" class="tsd-signature-type">WekeUrlRef</a></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/render.ts#L5">lib/tagged/render.ts:5</a></li>
 						</ul>
 					</aside>
 				</section>
@@ -164,7 +297,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/tagged/index.ts#L10">lib/tagged/index.ts:10</a></li>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/render.ts#L8">lib/tagged/render.ts:8</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -187,7 +320,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/tagged/index.ts#L49">lib/tagged/index.ts:49</a></li>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/render.ts#L48">lib/tagged/render.ts:48</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -213,7 +346,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/number.ts#L22">lib/number.ts:22</a></li>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/number.ts#L22">lib/number.ts:22</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -255,6 +388,32 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-function">
+					<a name="group" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagConst">Const</span> group</h3>
+					<ul class="tsd-signatures tsd-kind-function">
+						<li class="tsd-signature tsd-kind-icon">group<span class="tsd-signature-symbol">(</span>literals<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">TemplateStringsArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span>, <span class="tsd-signature-symbol">...</span>params<span class="tsd-signature-symbol">: </span><a href="globals.html#wekeblockparam" class="tsd-signature-type">WekeBlockParam</a><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/render.ts#L75">lib/tagged/render.ts:75</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>literals: <span class="tsd-signature-type">TemplateStringsArray</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>params: <a href="globals.html#wekeblockparam" class="tsd-signature-type">WekeBlockParam</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function">
 					<a name="h3" class="tsd-anchor"></a>
 					<h3><span class="tsd-flag ts-flagConst">Const</span> h3</h3>
 					<ul class="tsd-signatures tsd-kind-function">
@@ -264,7 +423,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/tagged/index.ts#L57">lib/tagged/index.ts:57</a></li>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/render.ts#L56">lib/tagged/render.ts:56</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -274,6 +433,243 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>params: <a href="globals.html#wekespanparam" class="tsd-signature-type">WekeSpanParam</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="list1" class="tsd-anchor"></a>
+					<h3>list1</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">list1&lt;T&gt;<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, renderT<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/list.ts#L6">lib/tagged/list.ts:6</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>collection of items to render in a list</p>
+									</div>
+								</li>
+								<li>
+									<h5>renderT: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="list2" class="tsd-anchor"></a>
+					<h3>list2</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">list2&lt;T, U&gt;<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, renderT<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span>, renderU<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/list.ts#L20">lib/tagged/list.ts:20</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>U</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>renderT: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>renderU: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <span class="tsd-signature-type">U</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="list3" class="tsd-anchor"></a>
+					<h3>list3</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">list3&lt;T, U, V&gt;<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, renderT<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span>, renderU<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span>, renderV<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/list.ts#L44">lib/tagged/list.ts:44</a></li>
+								</ul>
+							</aside>
+							<div class="tsd-comment tsd-typography">
+							</div>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>U</h4>
+								</li>
+								<li>
+									<h4>V</h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>renderT: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <span class="tsd-signature-type">T</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>renderU: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <span class="tsd-signature-type">U</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-symbol">[</span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">]</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<h5>renderV: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">string</span></h5>
+									<div class="tsd-comment tsd-typography">
+									</div>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">V</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <span class="tsd-signature-type">V</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -290,7 +686,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/number.ts#L46">lib/number.ts:46</a></li>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/number.ts#L46">lib/number.ts:46</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
@@ -344,7 +740,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/tagged/index.ts#L14">lib/tagged/index.ts:14</a></li>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/render.ts#L12">lib/tagged/render.ts:12</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -367,7 +763,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/tagged/index.ts#L32">lib/tagged/index.ts:32</a></li>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/render.ts#L31">lib/tagged/render.ts:31</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -377,6 +773,135 @@
 								</li>
 								<li>
 									<h5><span class="tsd-flag ts-flagRest">Rest</span> <span class="tsd-signature-symbol">...</span>params: <a href="globals.html#wekespanparam" class="tsd-signature-type">WekeSpanParam</a><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="tablebycolumns" class="tsd-anchor"></a>
+					<h3>table<wbr>ByColumns</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">table<wbr>ByColumns&lt;T, K&gt;<span class="tsd-signature-symbol">(</span>info<span class="tsd-signature-symbol">: </span><a href="globals.html#tableinfo" class="tsd-signature-type">TableInfo</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/table.ts#L20">lib/tagged/table.ts:20</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>info: <a href="globals.html#tableinfo" class="tsd-signature-type">TableInfo</a><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">&gt;</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="tablebymap" class="tsd-anchor"></a>
+					<h3>table<wbr>ByMap</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">table<wbr>ByMap&lt;T, U, K&gt;<span class="tsd-signature-symbol">(</span>items<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, rowOf<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">U</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/table.ts#L48">lib/tagged/table.ts:48</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>U<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">{}</span></h4>
+								</li>
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">U</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>items: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5>rowOf: <span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol"> =&gt; </span><span class="tsd-signature-type">U</span></h5>
+									<ul class="tsd-parameters">
+										<li class="tsd-parameter-signature">
+											<ul class="tsd-signatures tsd-kind-type-literal">
+												<li class="tsd-signature tsd-kind-icon"><span class="tsd-signature-symbol">(</span>value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span>, index<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, array<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">U</span></li>
+											</ul>
+											<ul class="tsd-descriptions">
+												<li class="tsd-description">
+													<h4 class="tsd-parameters-title">Parameters</h4>
+													<ul class="tsd-parameters">
+														<li>
+															<h5>value: <span class="tsd-signature-type">T</span></h5>
+														</li>
+														<li>
+															<h5>index: <span class="tsd-signature-type">number</span></h5>
+														</li>
+														<li>
+															<h5>array: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+														</li>
+													</ul>
+													<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">U</span></h4>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-function tsd-has-type-parameter">
+					<a name="tableof" class="tsd-anchor"></a>
+					<h3>table<wbr>Of</h3>
+					<ul class="tsd-signatures tsd-kind-function tsd-has-type-parameter">
+						<li class="tsd-signature tsd-kind-icon">table<wbr>Of&lt;T, K&gt;<span class="tsd-signature-symbol">(</span>rows<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span>, cols<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">[]</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/table.ts#L67">lib/tagged/table.ts:67</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-type-parameters-title">Type parameters</h4>
+							<ul class="tsd-type-parameters">
+								<li>
+									<h4>T</h4>
+								</li>
+								<li>
+									<h4>K<span class="tsd-signature-symbol">: </span><span class="tsd-signature-symbol">keyof </span><span class="tsd-signature-type">T</span></h4>
+								</li>
+							</ul>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>rows: <span class="tsd-signature-type">T</span><span class="tsd-signature-symbol">[]</span></h5>
+								</li>
+								<li>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> cols: <span class="tsd-signature-type">K</span><span class="tsd-signature-symbol">[]</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
@@ -393,7 +918,7 @@
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/4b1e375/src/lib/tagged/index.ts#L64">lib/tagged/index.ts:64</a></li>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/tagged/render.ts#L63">lib/tagged/render.ts:63</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -445,17 +970,26 @@
 					<li class=" tsd-kind-class">
 						<a href="classes/wekeumlelement.html" class="tsd-kind-icon">Weke<wbr>Uml<wbr>Element</a>
 					</li>
+					<li class=" tsd-kind-class">
+						<a href="classes/wekeurlref.html" class="tsd-kind-icon">Weke<wbr>Url<wbr>Ref</a>
+					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/wekeelement.html" class="tsd-kind-icon">Weke<wbr>Element</a>
 					</li>
 					<li class=" tsd-kind-interface">
 						<a href="interfaces/wekelinewriter.html" class="tsd-kind-icon">Weke<wbr>Line<wbr>Writer</a>
 					</li>
-					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#wekeblockparam" class="tsd-kind-icon">Weke<wbr>Block<wbr>Param</a>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#celldata" class="tsd-kind-icon">Cell<wbr>Data</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#columninfo" class="tsd-kind-icon">Column<wbr>Info</a>
+					</li>
+					<li class=" tsd-kind-type-alias tsd-has-type-parameter">
+						<a href="globals.html#tableinfo" class="tsd-kind-icon">Table<wbr>Info</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
-						<a href="globals.html#wekeother" class="tsd-kind-icon">Weke<wbr>Other</a>
+						<a href="globals.html#wekeblockparam" class="tsd-kind-icon">Weke<wbr>Block<wbr>Param</a>
 					</li>
 					<li class=" tsd-kind-type-alias">
 						<a href="globals.html#wekespanparam" class="tsd-kind-icon">Weke<wbr>Span<wbr>Param</a>
@@ -470,7 +1004,19 @@
 						<a href="globals.html#double" class="tsd-kind-icon">double</a>
 					</li>
 					<li class=" tsd-kind-function">
+						<a href="globals.html#group" class="tsd-kind-icon">group</a>
+					</li>
+					<li class=" tsd-kind-function">
 						<a href="globals.html#h3" class="tsd-kind-icon">h3</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#list1" class="tsd-kind-icon">list1</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#list2" class="tsd-kind-icon">list2</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#list3" class="tsd-kind-icon">list3</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#power" class="tsd-kind-icon">power</a>
@@ -480,6 +1026,15 @@
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#span" class="tsd-kind-icon">span</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#tablebycolumns" class="tsd-kind-icon">table<wbr>ByColumns</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#tablebymap" class="tsd-kind-icon">table<wbr>ByMap</a>
+					</li>
+					<li class=" tsd-kind-function tsd-has-type-parameter">
+						<a href="globals.html#tableof" class="tsd-kind-icon">table<wbr>Of</a>
 					</li>
 					<li class=" tsd-kind-function">
 						<a href="globals.html#uml" class="tsd-kind-icon">uml</a>

@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WekeH3Element | weke-plex</title>
+	<title>WekeUrlRef | weke-plex</title>
 	<meta name="description" content="Documentation for weke-plex">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../globals.html">Globals</a>
 				</li>
 				<li>
-					<a href="wekeh3element.html">WekeH3Element</a>
+					<a href="wekeurlref.html">WekeUrlRef</a>
 				</li>
 			</ul>
-			<h1>Class WekeH3Element</h1>
+			<h1>Class WekeUrlRef</h1>
 		</div>
 	</div>
 </header>
@@ -70,14 +70,8 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">WekeH3Element</span>
+						<span class="target">WekeUrlRef</span>
 					</li>
-				</ul>
-			</section>
-			<section class="tsd-panel">
-				<h3>Implements</h3>
-				<ul class="tsd-hierarchy">
-					<li><a href="../interfaces/wekeelement.html" class="tsd-signature-type">WekeElement</a></li>
 				</ul>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -87,20 +81,14 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="wekeh3element.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="wekeurlref.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="wekeh3element.html#tag" class="tsd-kind-icon">tag</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="wekeh3element.html#text" class="tsd-kind-icon">text</a></li>
-							</ul>
-						</section>
-						<section class="tsd-index-section ">
-							<h3>Methods</h3>
-							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="wekeh3element.html#tolines" class="tsd-kind-icon">to<wbr>Lines</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="wekeurlref.html#url" class="tsd-kind-icon">url</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="wekeurlref.html#weke" class="tsd-kind-icon">weke</a></li>
 							</ul>
 						</section>
 					</div>
@@ -112,22 +100,22 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Weke<wbr>H3Element<span class="tsd-signature-symbol">(</span>text<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="wekeh3element.html" class="tsd-signature-type">WekeH3Element</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Weke<wbr>Url<wbr>Ref<span class="tsd-signature-symbol">(</span>url<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="wekeurlref.html" class="tsd-signature-type">WekeUrlRef</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/dom/index.ts#L34">lib/dom/index.ts:34</a></li>
+									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/ref/index.ts#L7">lib/ref/index.ts:7</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>text: <span class="tsd-signature-type">string</span></h5>
+									<h5>url: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="wekeh3element.html" class="tsd-signature-type">WekeH3Element</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="wekeurlref.html" class="tsd-signature-type">WekeUrlRef</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -135,52 +123,24 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="tag" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> tag</h3>
-					<div class="tsd-signature tsd-kind-icon">tag<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"H3"</span><span class="tsd-signature-symbol"> = &quot;H3&quot;</span></div>
+					<a name="url" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> url</h3>
+					<div class="tsd-signature tsd-kind-icon">url<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
-						<p>Implementation of <a href="../interfaces/wekeelement.html">WekeElement</a>.<a href="../interfaces/wekeelement.html#tag">tag</a></p>
 						<ul>
-							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/dom/index.ts#L34">lib/dom/index.ts:34</a></li>
+							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/ref/index.ts#L8">lib/ref/index.ts:8</a></li>
 						</ul>
 					</aside>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="text" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> text</h3>
-					<div class="tsd-signature tsd-kind-icon">text<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
+					<a name="weke" class="tsd-anchor"></a>
+					<h3><span class="tsd-flag ts-flagReadonly">Readonly</span> weke</h3>
+					<div class="tsd-signature tsd-kind-icon">weke<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">"URLREF"</span><span class="tsd-signature-symbol"> = &quot;URLREF&quot;</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/dom/index.ts#L35">lib/dom/index.ts:35</a></li>
+							<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/ref/index.ts#L7">lib/ref/index.ts:7</a></li>
 						</ul>
 					</aside>
-				</section>
-			</section>
-			<section class="tsd-panel-group tsd-member-group ">
-				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="tolines" class="tsd-anchor"></a>
-					<h3>to<wbr>Lines</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">to<wbr>Lines<span class="tsd-signature-symbol">(</span>writer<span class="tsd-signature-symbol">: </span><a href="../interfaces/wekelinewriter.html" class="tsd-signature-type">WekeLineWriter</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<p>Implementation of <a href="../interfaces/wekeelement.html">WekeElement</a>.<a href="../interfaces/wekeelement.html#tolines">toLines</a></p>
-								<ul>
-									<li>Defined in <a href="https://github.com/zekethegeke/weke-plex/blob/d388c40/src/lib/dom/index.ts#L36">lib/dom/index.ts:36</a></li>
-								</ul>
-							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>writer: <a href="../interfaces/wekelinewriter.html" class="tsd-signature-type">WekeLineWriter</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">void</span></h4>
-						</li>
-					</ul>
 				</section>
 			</section>
 		</div>
@@ -203,27 +163,9 @@
 					<li class=" tsd-kind-class">
 						<a href="wekedocumentserializer.html" class="tsd-kind-icon">Weke<wbr>Document<wbr>Serializer</a>
 					</li>
-				</ul>
-				<ul class="current">
-					<li class="current tsd-kind-class">
+					<li class=" tsd-kind-class">
 						<a href="wekeh3element.html" class="tsd-kind-icon">Weke<wbr>H3Element</a>
-						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="wekeh3element.html#constructor" class="tsd-kind-icon">constructor</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="wekeh3element.html#tag" class="tsd-kind-icon">tag</a>
-							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="wekeh3element.html#text" class="tsd-kind-icon">text</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="wekeh3element.html#tolines" class="tsd-kind-icon">to<wbr>Lines</a>
-							</li>
-						</ul>
 					</li>
-				</ul>
-				<ul class="after-current">
 					<li class=" tsd-kind-class">
 						<a href="wekelineselement.html" class="tsd-kind-icon">Weke<wbr>Lines<wbr>Element</a>
 					</li>
@@ -236,9 +178,24 @@
 					<li class=" tsd-kind-class">
 						<a href="wekeumlelement.html" class="tsd-kind-icon">Weke<wbr>Uml<wbr>Element</a>
 					</li>
-					<li class=" tsd-kind-class">
+				</ul>
+				<ul class="current">
+					<li class="current tsd-kind-class">
 						<a href="wekeurlref.html" class="tsd-kind-icon">Weke<wbr>Url<wbr>Ref</a>
+						<ul>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class">
+								<a href="wekeurlref.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="wekeurlref.html#url" class="tsd-kind-icon">url</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="wekeurlref.html#weke" class="tsd-kind-icon">weke</a>
+							</li>
+						</ul>
 					</li>
+				</ul>
+				<ul class="after-current">
 					<li class=" tsd-kind-interface">
 						<a href="../interfaces/wekeelement.html" class="tsd-kind-icon">Weke<wbr>Element</a>
 					</li>
